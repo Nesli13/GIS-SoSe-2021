@@ -5,6 +5,7 @@ body {
 
 a {
     font-size: 25px;
+    filter: opacity(.5);
 }
 
 ul.topnav {
