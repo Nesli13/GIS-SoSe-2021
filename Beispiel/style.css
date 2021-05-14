@@ -1,0 +1,175 @@
+body {
+    background-color: black;
+}
+
+@keyframes open {
+    from {
+        left: -100vw;
+    }
+    to {
+        left: 0;
+    }
+}
+
+#logo {
+    display: block;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    height: 50px;
+    margin-top: 5px;
+}
+
+#search {
+    float: right;
+    height: 60px;
+}
+
+#person {
+    float: right;
+    height: 60px;
+}
+
+#coca {
+    width: 100%;
+    height: 900px;
+}
+
+#leutee {
+    width: 550px;
+    height: 400px;
+}
+
+#shot {
+    width: 400px;
+    height: 400px;
+}
+
+#champs {
+    width: 380px;
+    height: 400px;
+}
+
+#gif {
+    height: 400px;
+}
+
+.navbar {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    overflow: auto;
+}
+
+#burgerbutton {
+    display: none;
+}
+
+
+/* Im Produktiven Einsatz sollte der Text-Teil des Label-Elements vielleicht durch eine Hintergrund-Grafik ersetzt werden. */
+
+.burgerimage {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 28pt;
+    cursor: pointer;
+    transition: transform 0.8s ease;
+    color: rgb(255, 255, 255);
+}
+
+nav {
+    background-color: rgb(0, 0, 0);
+    display: block;
+    height: 50px;
+    border-bottom: 3px solid, black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav ul {
+    display: none;
+    position: fixed;
+    top: 60px;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    list-style: none;
+}
+
+nav ul li {
+    display: block;
+    width: auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(139, 0, 0);
+    display: block;
+    padding: 20px;
+}
+
+nav ul li a:hover {
+    background-color: rgb(168, 166, 166);
+}
+
+#burgerbutton:checked~ul {
+    display: block;
+    animation-name: open;
+    animation-duration: 0.8s;
+}
+
+#burgerbutton:checked~.burgerimage {
+    transform: rotate(180deg);
+}
+
+@media screen and (min-width:720px) {
+    #leutee {
+        width: 550px;
+        height: 400px;
+    }
+    #shot {
+        width: 400px;
+        height: 400px;
+    }
+    #champs {
+        width: 380px;
+        height: 400px;
+    }
+    #gif {
+        height: 400px;
+    }
+}
+
+
+/*
+@media screen and (max-width:601px){
+    #coca {
+    width: 870px;
+    height: 500px;
+}
+     #leutee
+    {
+    width: 550px;
+    height: 400px;
+}
+#shot {
+    width: 400px;
+    height: 400px;
+}
+#champs {
+    width: 380px;
+    height: 400px;
+}
+
+#gif {
+    height: 400px;
+}
+
+}*/

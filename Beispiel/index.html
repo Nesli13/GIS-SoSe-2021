@@ -11,6 +11,51 @@
 
 <body>
 
+    <nav>
+        <input type="checkbox" id="burgerbutton" />
+        <label for="burgerbutton" class="burgerimage" title="Navigation">&#x2630;</label>
+        <ul>
+            <li><a href="#ÜBER UNS">ÜBER UNS</a></li>
+            <li><a href="#UNSERE MARKE">UNSERE MARKE</a></li>
+            <li><a href="#VERANTWORTUNG">VERANTWORTUNG</a></li>
+            <li><a href="#UNTERHALTUNG">UNTERHALTUNG</a></li>
+        </ul>
+        <div class="navbar">
+            <img id="person" src="person-icon-white.png">
+            <img id="search" src="Lupe.jpg">
+            <img id="logo" src="logo-de.png">
+    </nav>
+    </div>
+
+    <img id="coca" src="classic.jpeg">
+    <img id="leutee" src="leutee.jpg">
+    <img id="leutee" src="coca-cola-urlaubsziele.jpg">
+    <img id="leutee" src="gewinn.jpg">
+    <img id="shot" src="shot.jpg"> <img id="gif" src="gifffs.gif"><img id="champs" src="cmaps.gif"> //Slideshow
+    <!--- <div class="slideshow" style="max-width: 500px">
+        <img class="mySlides" src="leutee.jpg" style="width: 100%">
+        <img class="mySlides" src="coca-cola-urlaubsziele.jpg" style="width: 100%">
+    </div>-->
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+
 </body>
 
 </html>
