@@ -4,6 +4,7 @@ body {
     align-items: center;
     min-height: 0px;
     /* background-color: #fce6e6;*/
+    background-image: url("pictures/brainn.jpg");
 }
 
 nav {
@@ -140,17 +141,6 @@ h1 {
     text-align: center;
     font-size: xx-large;
     font-family: fantasy;
-}
-
-#pics [alt="walpaper"] {
-    height: 600px;
-    width: 75%;
-    /* width: 100%; */
-    display: block;
-    margin: auto;
-    left: 13%;
-    position: absolute;
-    top: 145px;
 }
 
 #button {
