@@ -13,7 +13,7 @@ body {
 
 /*Desktop*/
 
-@media screen and (min-width:720px) {
+@media screen and (min-width: 720px) {
     nav {
         background-color: #B0D9F1;
         display: block;
@@ -172,7 +172,7 @@ body {
     #logo {
         display: block;
         position: fixed;
-        height: 95px;
+        height: 70px;
         top: 40px;
         margin-top: 3px;
     }
@@ -185,7 +185,7 @@ body {
 
 /*Smartphone*/
 
-@media screen and (max-width: 720px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
     nav {
         background-color: #B0D9F1;
         display: block;
@@ -208,8 +208,8 @@ body {
         float: right;
     }
     .menu_burger {
-        width: 60px;
-        height: 6px;
+        width: 40px;
+        height: 5px;
         background: rgb(0, 0, 0);
         border-radius: 6px;
         box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
@@ -219,8 +219,8 @@ body {
     .menu_burger::after {
         content: '';
         position: absolute;
-        width: 60px;
-        height: 6px;
+        width: 40px;
+        height: 5px;
         background: rgb(0, 0, 0);
         border-radius: 5px;
         transition: all .5s ease-in-out;
@@ -281,8 +281,8 @@ body {
     #logo {
         display: block;
         position: fixed;
-        height: 60px;
-        top: 40px;
+        height: 50px;
+        top: 43px;
         margin-top: 3px;
     }
     footer {
@@ -303,7 +303,7 @@ body {
     }
     h1 {
         text-align: center;
-        font-size: x-large;
+        font-size: large;
     }
     .button1 #button1 {
         position: absolute;

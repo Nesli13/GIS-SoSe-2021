@@ -1,3 +1,4 @@
+namespace burgerMenu {
 const menu = document.querySelector( ' .menu ' );
 let menuOpen = false;
 menu.addEventListener('click', () => {
@@ -9,3 +10,4 @@ if ( !menuOpen) {
     menuOpen = false;
 }
 });
+}
